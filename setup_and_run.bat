@@ -12,8 +12,13 @@ if not exist .venv (
 echo 仮想環境を有効化...
 call .venv\Scripts\activate.bat
 
-echo xlwingsをインストール中...
-pip install xlwings --quiet
+pip show xlwings >nul 2>&1
+if errorlevel 1 (
+    echo xlwingsをインストール中...
+    pip install xlwings --quiet --no-warn-script-location
+) else (
+    echo xlwings: インストール済み
+)
 
 echo.
 echo === 画像挿入スクリプトを実行 ===
