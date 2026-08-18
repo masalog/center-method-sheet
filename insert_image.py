@@ -45,6 +45,6 @@ except Exception as e:
     if app:
         try:
             app.quit()
-        except:
+        except Exception:
             pass
     sys.exit(1)
