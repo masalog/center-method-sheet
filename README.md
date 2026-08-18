@@ -15,7 +15,7 @@ center-method-sheet/
 └── images/
     └── image_001.png         ← 挿入用イラスト
 ```
-<br><br>
+<br>
 
 ## 📐 画像サイズ
 
@@ -25,8 +25,8 @@ center-method-sheet/
 | 高さ | 642.5 pt | 857 px |
 | 左位置 | 187.6 pt | — |
 | 上位置 | 150.8 pt | — |
-<br><br>
 
+<br><br>
 
 ## 🎨 画像生成プロンプト
 
