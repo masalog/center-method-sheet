@@ -2,8 +2,8 @@ import xlwings as xw
 import sys
 
 # --- 設定 ---
-excel_path = r"C:\Users\dghy1\認知症ケア\center_sheet_C-1-2.xlsx"
-img_path = r"C:\Users\dghy1\認知症ケア\images\image_001.png"
+excel_path = r"C:\Users\dghy1\center-method-sheet\center_sheet_C-1-2.xlsx"
+img_path = r"C:\Users\dghy1\center-method-sheet\images\image_001.png"
 
 # --- 画像サイズ・位置（ポイント単位） ---
 IMG_WIDTH = 267.7
