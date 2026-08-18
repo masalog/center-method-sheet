@@ -1,20 +1,19 @@
 # 🧠 認知症ケア アセスメントシート
 
 認知症ケアのセンター方式アセスメントシート（C-1-2「私の姿と気持ちシート」）に手書き風イラストを挿入するツールです。
-<br><br>
 
 ## 📁 ファイル構成
 
 ```
 center-method-sheet/
 ├── center_sheet_C-1-2.xlsx   ← アセスメントシート
-├── insert_image.py           ← 画像挿入スクリプト（xlwings）
-├── setup_and_run.bat         ← セットアップ＆実行
+├── insert_image.ps1          ← 画像挿入スクリプト（PowerShell）
+├── setup_and_run.bat         ← ダブルクリックで実行
 ├── README.md
+├── .gitignore
 └── images/
     └── image_001.png         ← 挿入用イラスト
 ```
-<br>
 
 ## 📐 画像サイズ
 
@@ -24,13 +23,10 @@ center-method-sheet/
 | 高さ | 642.5 pt | 857 px |
 | 左位置 | 187.6 pt | — |
 | 上位置 | 150.8 pt | — |
-<br>
 
 ## 🎨 画像生成プロンプト
 
 以下をそのまま画像生成AIに貼り付けてください。
-
-画像生成AIは [Amazon Quick](https://aws.amazon.com/jp/quick/) の利用を推奨します。
 
 ```
 357×857ピクセルの縦長画像を「image_001.png」というファイル名で生成してください。
@@ -39,8 +35,16 @@ center-method-sheet/
 
 以下の要素は含めないでください：写実的、暗い、怖い、悲しい、ネガティブな表現、テキスト、ラベル、横長構図。
 
+※「認知症」などの医療用語がフィルターに引っかかる場合は「穏やかな高齢者」「物忘れのある高齢者」など表現を調整してください。利用者に合わせて自由にカスタマイズできます（例：車椅子に座っている、杖をついている等）。
 ```
-<br>
+
+※ 画像生成AIは [Amazon Quick](https://aws.amazon.com/jp/quick/) の利用を推奨します。
+
+## 📥 ダウンロード
+
+```bash
+git clone https://github.com/masalog/center-method-sheet.git
+```
 
 ## 🚀 Excelへの挿入手順
 
@@ -48,9 +52,9 @@ center-method-sheet/
 2. `setup_and_run.bat` をダブルクリックする
 
 画像が自動で正しいサイズ・位置に挿入されます。
-<br><br>
 
 ## ⚙️ 要件
 
-- Python 3.9 ~
+- Windows
 - Microsoft Excel（デスクトップ版）
+- PowerShell 5.1以降（Windows標準搭載）
