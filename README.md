@@ -3,7 +3,7 @@
 認知症ケアのセンター方式アセスメントシート（C-1-2「私の姿と気持ちシート」）に手書き風イラストを挿入するツールです。
 <br><br>
 
-<img src="images/image_001.png" width="446" alt="挿入用イラスト">
+<img src="images/image_001.png" width="300" alt="挿入用イラスト">
 
 ## 📁 ファイル構成
 
